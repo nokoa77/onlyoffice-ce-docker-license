@@ -34,7 +34,7 @@ RUN cd /build/server   && git apply /build/server.patch
 # ARG tag=v6.3.1.79 # Working mobile editor
 RUN git clone --quiet --branch $tag --depth 1 https://github.com/ONLYOFFICE/sdkjs.git       /build/sdkjs
 RUN git clone --quiet --branch $tag --depth 1 https://github.com/ONLYOFFICE/web-apps.git    /build/web-apps
-COPY web-apps.patch /build/
+# COPY web-apps.patch /build/
 # RUN cd /build/web-apps && git apply /build/web-apps.patch
 
 ## Build
